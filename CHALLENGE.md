@@ -11,9 +11,9 @@ Most challenges ask you to build something. This one first asks you to decide wh
 
 ### **Delivery Format**
 
-Create a GitHub repo and complete the tasks below.
+Create a GitHub repo and complete the tasks below. (You will need to share the link)
 
-- **Time expectation: 3 hours, in one sitting.** We mean it. We do not expect you to finish everything. At 3 hours, stop and write in `NOTES.md` what you left out and why — what you chose to skip is part of what we evaluate. An honest incomplete submission scores higher than a polished one that took twelve.
+- **Time expectation: 3 hours, in one sitting.** We mean it. We do not expect you to finish everything. 
 - **Nothing in this challenge requires an API key, an account, a subscription, or money.** Part B uses `starter/fake_llm.py`, an offline stand-in for a hosted model that ships in this repo. You may *optionally* point your code at a local open-weights model (e.g. via Ollama); it is not required and earns no extra credit.
 - You may use documentation, and you may use AI coding assistants. We assume you will. You will be asked to defend anything you submit, line by line.
 - Python 3.11+. Standard library plus whatever you `pip install` is fine; list it in `requirements.txt`.
