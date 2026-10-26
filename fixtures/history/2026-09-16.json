@@ -1,0 +1,555 @@
+{
+  "run_id": "nightly-2026-09-16",
+  "date": "2026-09-16",
+  "model_version": "claude-sonnet-4-6",
+  "suite": "playwright-regression",
+  "total_failures": 35,
+  "failures_accounted_for": 31,
+  "clusters": [
+    {
+      "name": "Assertion mismatches in booking flow",
+      "size": 15
+    },
+    {
+      "name": "UI timeouts on confirm actions",
+      "size": 12
+    },
+    {
+      "name": "Detached DOM during retry",
+      "size": 4
+    }
+  ],
+  "classifications": [
+    {
+      "test_file": "payment/refund.spec.ts",
+      "test_title": "should issue partial refund",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "real_bug",
+      "confidence": 0.9,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 7",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "flaky",
+      "confidence": 0.86,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "booking/quote.spec.ts",
+      "test_title": "should recalculate on stop added",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "flaky",
+      "confidence": 0.91,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "booking/quote.spec.ts",
+      "test_title": "should apply corporate rate card",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "flaky",
+      "confidence": 0.88,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 6",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "environment",
+      "confidence": 0.89,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "portal/profile.spec.ts",
+      "test_title": "should save billing address",
+      "cluster": "Detached DOM during retry",
+      "classification": "flaky",
+      "confidence": 0.88,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "portal/login.spec.ts",
+      "test_title": "should authenticate VIP account",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "flaky",
+      "confidence": 0.85,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 7",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "environment",
+      "confidence": 0.86,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/search.spec.ts",
+      "test_title": "should return quotes for valid route",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "flaky",
+      "confidence": 0.85,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 5",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "flaky",
+      "confidence": 0.84,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 12",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "real_bug",
+      "confidence": 0.84,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "chauffeur/status.spec.ts",
+      "test_title": "should update ride status",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "environment",
+      "confidence": 0.86,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "dispatch/assign.spec.ts",
+      "test_title": "should respect vehicle class",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "flaky",
+      "confidence": 0.89,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "payment/checkout.spec.ts",
+      "test_title": "should decline insufficient funds",
+      "cluster": "Detached DOM during retry",
+      "classification": "environment",
+      "confidence": 0.92,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/search.spec.ts",
+      "test_title": "should handle no availability",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "flaky",
+      "confidence": 0.84,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 4",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "environment",
+      "confidence": 0.86,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 3",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "environment",
+      "confidence": 0.85,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 1",
+      "cluster": "Detached DOM during retry",
+      "classification": "environment",
+      "confidence": 0.89,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "boarding/scan.spec.ts",
+      "test_title": "should validate boarding pass",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "environment",
+      "confidence": 0.91,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 8",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "environment",
+      "confidence": 0.85,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 10",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "flaky",
+      "confidence": 0.9,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "dispatch/assign.spec.ts",
+      "test_title": "should assign nearest chauffeur",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "flaky",
+      "confidence": 0.9,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 3",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "flaky",
+      "confidence": 0.89,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 2",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "flaky",
+      "confidence": 0.9,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 6",
+      "cluster": "Detached DOM during retry",
+      "classification": "environment",
+      "confidence": 0.87,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 4",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "flaky",
+      "confidence": 0.86,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "dispatch/notify.spec.ts",
+      "test_title": "should send assignment SMS",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "real_bug",
+      "confidence": 0.88,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 8",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "environment",
+      "confidence": 0.9,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 5",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "environment",
+      "confidence": 0.83,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "payment/checkout.spec.ts",
+      "test_title": "should capture card payment",
+      "cluster": "UI timeouts on confirm actions",
+      "classification": "environment",
+      "confidence": 0.86,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 9",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "flaky",
+      "confidence": 0.89,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    }
+  ],
+  "slack_summary": "3 clusters. 3 real bug, 13 environment, 15 flaky. 31 failures explained.",
+  "raw_failures": [
+    {
+      "test_file": "payment/refund.spec.ts",
+      "test_title": "should issue partial refund",
+      "error_message": "Error: expect(received).toBe(expected)\n  Expected: 200\n  Received: 'pending'",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:77)\n    at Object.<anonymous> (tests/payment/refund.spec.ts:35)",
+      "retry_count": 0,
+      "duration_ms": 31323
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 7",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Continue' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:47)\n    at Object.<anonymous> (tests/booking/multileg.spec.ts:19)",
+      "retry_count": 1,
+      "duration_ms": 33861
+    },
+    {
+      "test_file": "booking/quote.spec.ts",
+      "test_title": "should recalculate on stop added",
+      "error_message": "Error: expect(received).toBe(expected)\n  Expected: 200\n  Received: false",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:154)\n    at Object.<anonymous> (tests/booking/quote.spec.ts:49)",
+      "retry_count": 1,
+      "duration_ms": 4880
+    },
+    {
+      "test_file": "booking/quote.spec.ts",
+      "test_title": "should apply corporate rate card",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Confirm' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:172)\n    at Object.<anonymous> (tests/booking/quote.spec.ts:46)",
+      "retry_count": 1,
+      "duration_ms": 5926
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 6",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Assign' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:142)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:71)",
+      "retry_count": 0,
+      "duration_ms": 8530
+    },
+    {
+      "test_file": "portal/profile.spec.ts",
+      "test_title": "should save billing address",
+      "error_message": "Error: locator.fill: Element is not attached to the DOM\n  retrying click action",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:47)\n    at Object.<anonymous> (tests/portal/profile.spec.ts:82)",
+      "retry_count": 1,
+      "duration_ms": 22693
+    },
+    {
+      "test_file": "portal/login.spec.ts",
+      "test_title": "should authenticate VIP account",
+      "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://staging-portal.moveo.internal",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:52)\n    at Object.<anonymous> (tests/portal/login.spec.ts:43)",
+      "retry_count": 2,
+      "duration_ms": 14937
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 7",
+      "error_message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n  waiting for navigation to '/dashboard' until 'load'",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:147)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:56)",
+      "retry_count": 0,
+      "duration_ms": 8048
+    },
+    {
+      "test_file": "booking/search.spec.ts",
+      "test_title": "should return quotes for valid route",
+      "error_message": "Error: expect(response.status()).toBe(200)\n  Expected: 200\n  Received: 500",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:116)\n    at Object.<anonymous> (tests/booking/search.spec.ts:59)",
+      "retry_count": 2,
+      "duration_ms": 16751
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 5",
+      "error_message": "Error: expect(response.status()).toBe(200)\n  Expected: 200\n  Received: 500",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:174)\n    at Object.<anonymous> (tests/booking/multileg.spec.ts:69)",
+      "retry_count": 1,
+      "duration_ms": 1771
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 12",
+      "error_message": "Error: expect(received).toBe(expected)\n  Expected: true\n  Received: 'pending'",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:87)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:73)",
+      "retry_count": 0,
+      "duration_ms": 28830
+    },
+    {
+      "test_file": "chauffeur/status.spec.ts",
+      "test_title": "should update ride status",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Continue' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:58)\n    at Object.<anonymous> (tests/chauffeur/status.spec.ts:69)",
+      "retry_count": 0,
+      "duration_ms": 19924
+    },
+    {
+      "test_file": "dispatch/assign.spec.ts",
+      "test_title": "should respect vehicle class",
+      "error_message": "Error: expect(received).toBe(expected)\n  Expected: 'confirmed'\n  Received: 'pending'",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:116)\n    at Object.<anonymous> (tests/dispatch/assign.spec.ts:20)",
+      "retry_count": 2,
+      "duration_ms": 16337
+    },
+    {
+      "test_file": "payment/checkout.spec.ts",
+      "test_title": "should decline insufficient funds",
+      "error_message": "Error: locator.fill: Element is not attached to the DOM\n  retrying click action",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:126)\n    at Object.<anonymous> (tests/payment/checkout.spec.ts:23)",
+      "retry_count": 0,
+      "duration_ms": 4321
+    },
+    {
+      "test_file": "booking/search.spec.ts",
+      "test_title": "should handle no availability",
+      "error_message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n  waiting for navigation to '/dashboard' until 'load'",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:139)\n    at Object.<anonymous> (tests/booking/search.spec.ts:23)",
+      "retry_count": 2,
+      "duration_ms": 16032
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 4",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Pay now' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:73)\n    at Object.<anonymous> (tests/booking/multileg.spec.ts:45)",
+      "retry_count": 0,
+      "duration_ms": 15997
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 3",
+      "error_message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at https://staging-portal.moveo.internal",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:170)\n    at Object.<anonymous> (tests/booking/multileg.spec.ts:67)",
+      "retry_count": 0,
+      "duration_ms": 16200
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 1",
+      "error_message": "Error: locator.fill: Element is not attached to the DOM\n  retrying click action",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:47)\n    at Object.<anonymous> (tests/booking/multileg.spec.ts:28)",
+      "retry_count": 0,
+      "duration_ms": 19580
+    },
+    {
+      "test_file": "boarding/scan.spec.ts",
+      "test_title": "should validate boarding pass",
+      "error_message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n  waiting for navigation to '/dashboard' until 'load'",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:171)\n    at Object.<anonymous> (tests/boarding/scan.spec.ts:18)",
+      "retry_count": 0,
+      "duration_ms": 18554
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 8",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Assign' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:67)\n    at Object.<anonymous> (tests/booking/multileg.spec.ts:13)",
+      "retry_count": 0,
+      "duration_ms": 31944
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 10",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Pay now' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:144)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:51)",
+      "retry_count": 1,
+      "duration_ms": 10627
+    },
+    {
+      "test_file": "dispatch/assign.spec.ts",
+      "test_title": "should assign nearest chauffeur",
+      "error_message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n  waiting for navigation to '/dashboard' until 'load'",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:117)\n    at Object.<anonymous> (tests/dispatch/assign.spec.ts:20)",
+      "retry_count": 1,
+      "duration_ms": 16402
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 3",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Pay now' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:160)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:73)",
+      "retry_count": 1,
+      "duration_ms": 27581
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 2",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Pay now' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:78)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:44)",
+      "retry_count": 2,
+      "duration_ms": 13543
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 6",
+      "error_message": "Error: locator.fill: Element is not attached to the DOM\n  retrying click action",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:149)\n    at Object.<anonymous> (tests/booking/multileg.spec.ts:15)",
+      "retry_count": 0,
+      "duration_ms": 30305
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 4",
+      "error_message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n  waiting for navigation to '/dashboard' until 'load'",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:169)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:36)",
+      "retry_count": 1,
+      "duration_ms": 28102
+    },
+    {
+      "test_file": "dispatch/notify.spec.ts",
+      "test_title": "should send assignment SMS",
+      "error_message": "Error: expect(response.status()).toBe(200)\n  Expected: 200\n  Received: 500",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:169)\n    at Object.<anonymous> (tests/dispatch/notify.spec.ts:71)",
+      "retry_count": 0,
+      "duration_ms": 4303
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 8",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Pay now' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:147)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:84)",
+      "retry_count": 0,
+      "duration_ms": 4565
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 5",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Pay now' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:64)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:36)",
+      "retry_count": 0,
+      "duration_ms": 3838
+    },
+    {
+      "test_file": "payment/checkout.spec.ts",
+      "test_title": "should capture card payment",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Pay now' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:58)\n    at Object.<anonymous> (tests/payment/checkout.spec.ts:67)",
+      "retry_count": 0,
+      "duration_ms": 21464
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 9",
+      "error_message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n  waiting for navigation to '/dashboard' until 'load'",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:70)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:61)",
+      "retry_count": 1,
+      "duration_ms": 1919
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 1",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Continue' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:78)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:59)",
+      "retry_count": 1,
+      "duration_ms": 18686
+    },
+    {
+      "test_file": "booking/multileg.spec.ts",
+      "test_title": "should price multi-leg itinerary 2",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Assign' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:112)\n    at Object.<anonymous> (tests/booking/multileg.spec.ts:82)",
+      "retry_count": 1,
+      "duration_ms": 23898
+    },
+    {
+      "test_file": "portal/login.spec.ts",
+      "test_title": "should reject expired token",
+      "error_message": "Error: expect(response.status()).toBe(200)\n  Expected: 200\n  Received: 500",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:51)\n    at Object.<anonymous> (tests/portal/login.spec.ts:67)",
+      "retry_count": 0,
+      "duration_ms": 10016
+    },
+    {
+      "test_file": "booking/groups.spec.ts",
+      "test_title": "should handle group booking case 11",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Confirm' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:177)\n    at Object.<anonymous> (tests/booking/groups.spec.ts:14)",
+      "retry_count": 1,
+      "duration_ms": 15758
+    }
+  ]
+}

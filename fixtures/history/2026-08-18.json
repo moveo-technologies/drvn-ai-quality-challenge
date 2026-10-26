@@ -1,0 +1,155 @@
+{
+  "run_id": "nightly-2026-08-18",
+  "date": "2026-08-18",
+  "model_version": "claude-sonnet-4-5",
+  "suite": "playwright-regression",
+  "total_failures": 8,
+  "failures_accounted_for": 8,
+  "clusters": [
+    {
+      "name": "Assertion mismatches in booking flow",
+      "size": 5
+    },
+    {
+      "name": "Server errors on write endpoints",
+      "size": 1
+    },
+    {
+      "name": "Authentication redirect not completing",
+      "size": 2
+    }
+  ],
+  "classifications": [
+    {
+      "test_file": "portal/login.spec.ts",
+      "test_title": "should authenticate VIP account",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "real_bug",
+      "confidence": 0.89,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "dispatch/assign.spec.ts",
+      "test_title": "should assign nearest chauffeur",
+      "cluster": "Server errors on write endpoints",
+      "classification": "real_bug",
+      "confidence": 0.84,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "portal/login.spec.ts",
+      "test_title": "should reject expired token",
+      "cluster": "Authentication redirect not completing",
+      "classification": "environment",
+      "confidence": 0.9,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "booking/search.spec.ts",
+      "test_title": "should return quotes for valid route",
+      "cluster": "Authentication redirect not completing",
+      "classification": "environment",
+      "confidence": 0.85,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "payment/checkout.spec.ts",
+      "test_title": "should capture card payment",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "environment",
+      "confidence": 0.91,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "chauffeur/status.spec.ts",
+      "test_title": "should update ride status",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "environment",
+      "confidence": 0.92,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    },
+    {
+      "test_file": "dispatch/assign.spec.ts",
+      "test_title": "should respect vehicle class",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "flaky",
+      "confidence": 0.86,
+      "rationale": "Grouped with similar failures in this run; passed on a retry, treated as intermittent."
+    },
+    {
+      "test_file": "boarding/scan.spec.ts",
+      "test_title": "should validate boarding pass",
+      "cluster": "Assertion mismatches in booking flow",
+      "classification": "environment",
+      "confidence": 0.87,
+      "rationale": "Grouped with similar failures in this run; error signature matches this cluster."
+    }
+  ],
+  "slack_summary": "3 clusters. 2 real bug, 5 environment, 1 flaky. 8 failures explained.",
+  "raw_failures": [
+    {
+      "test_file": "portal/login.spec.ts",
+      "test_title": "should authenticate VIP account",
+      "error_message": "Error: expect(received).toBe(expected)\n  Expected: true\n  Received: false",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:94)\n    at Object.<anonymous> (tests/portal/login.spec.ts:73)",
+      "retry_count": 0,
+      "duration_ms": 19973
+    },
+    {
+      "test_file": "dispatch/assign.spec.ts",
+      "test_title": "should assign nearest chauffeur",
+      "error_message": "Error: expect(response.status()).toBe(200)\n  Expected: 200\n  Received: 500",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:148)\n    at Object.<anonymous> (tests/dispatch/assign.spec.ts:38)",
+      "retry_count": 0,
+      "duration_ms": 3918
+    },
+    {
+      "test_file": "portal/login.spec.ts",
+      "test_title": "should reject expired token",
+      "error_message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n  waiting for navigation to '/dashboard' until 'load'",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:180)\n    at Object.<anonymous> (tests/portal/login.spec.ts:46)",
+      "retry_count": 0,
+      "duration_ms": 26746
+    },
+    {
+      "test_file": "booking/search.spec.ts",
+      "test_title": "should return quotes for valid route",
+      "error_message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n  waiting for navigation to '/dashboard' until 'load'",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:146)\n    at Object.<anonymous> (tests/booking/search.spec.ts:82)",
+      "retry_count": 0,
+      "duration_ms": 17211
+    },
+    {
+      "test_file": "payment/checkout.spec.ts",
+      "test_title": "should capture card payment",
+      "error_message": "Error: locator.fill: Element is not attached to the DOM\n  retrying click action",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:130)\n    at Object.<anonymous> (tests/payment/checkout.spec.ts:36)",
+      "retry_count": 0,
+      "duration_ms": 5015
+    },
+    {
+      "test_file": "chauffeur/status.spec.ts",
+      "test_title": "should update ride status",
+      "error_message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\n  waiting for getByRole('button', { name: 'Assign' })",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:175)\n    at Object.<anonymous> (tests/chauffeur/status.spec.ts:31)",
+      "retry_count": 0,
+      "duration_ms": 16696
+    },
+    {
+      "test_file": "dispatch/assign.spec.ts",
+      "test_title": "should respect vehicle class",
+      "error_message": "Error: locator.fill: Element is not attached to the DOM\n  retrying click action",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:70)\n    at Object.<anonymous> (tests/dispatch/assign.spec.ts:74)",
+      "retry_count": 1,
+      "duration_ms": 29795
+    },
+    {
+      "test_file": "boarding/scan.spec.ts",
+      "test_title": "should validate boarding pass",
+      "error_message": "Error: locator.fill: Element is not attached to the DOM\n  retrying click action",
+      "stack_trace": "    at BookingPage.confirm (pages/booking.page.ts:138)\n    at Object.<anonymous> (tests/boarding/scan.spec.ts:30)",
+      "retry_count": 0,
+      "duration_ms": 14518
+    }
+  ]
+}

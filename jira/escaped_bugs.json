@@ -1,0 +1,38 @@
+[
+  {
+    "jira": "IT-3312",
+    "reported": "2026-08-21",
+    "title": "Corporate rate card not applied on quote",
+    "linked_test": "booking/quote.spec.ts::should apply corporate rate card"
+  },
+  {
+    "jira": "IT-3390",
+    "reported": "2026-09-02",
+    "title": "VIP login loops back to sign-in",
+    "linked_test": "portal/login.spec.ts::should authenticate VIP account"
+  },
+  {
+    "jira": "IT-3418",
+    "reported": "2026-09-09",
+    "title": "Multi-leg itinerary priced incorrectly",
+    "linked_test": "booking/multileg.spec.ts::should price multi-leg itinerary 3"
+  },
+  {
+    "jira": "IT-3455",
+    "reported": "2026-09-15",
+    "title": "Assignment SMS not sent to chauffeur",
+    "linked_test": "dispatch/notify.spec.ts::should send assignment SMS"
+  },
+  {
+    "jira": "IT-3466",
+    "reported": "2026-09-17",
+    "title": "Group discount not applied for 10+ passengers",
+    "linked_test": "booking/groups.spec.ts::should apply group discount for 10+ passengers"
+  },
+  {
+    "jira": "IT-3471",
+    "reported": "2026-09-18",
+    "title": "Card payment captured twice on retry",
+    "linked_test": "payment/checkout.spec.ts::should capture card payment"
+  }
+]
